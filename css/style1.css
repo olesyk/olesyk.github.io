@@ -1,0 +1,406 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@keyframes circle {
+	from {transform:translate(-50%, -50%) rotate(0deg);}
+	to {transform:translate(-50%, -50%) rotate(360deg);}
+}
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: black;
+	z-index:100;
+	transition: 1s all;
+	visibility: visible;
+	opacity: 1;
+}
+
+.loader1 {
+	width: 35px;
+	height: 35px;
+	border: 5px solid black;
+	border-radius: 50%;
+	border-top-color: grey;
+	border-bottom-color: grey;
+	position: absolute;
+	left:50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	animation: 1s circle infinite linear;
+}
+
+.loader2 {
+	width: 55px;
+	height: 55px;
+	border: 5px solid black;
+	border-radius: 50%;
+	border-top-color: grey;
+	border-bottom-color: grey;
+	position: absolute;
+	left:50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	animation: 2s circle infinite linear;
+}
+
+.loader3 {
+	width: 75px;
+	height: 75px;
+	border: 5px solid black;
+	border-radius: 50%;
+	border-top-color: grey;
+	border-bottom-color: grey;
+	position: absolute;
+	left:50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	animation: 3s circle infinite linear;
+}
+
+.done {
+	opacity: 0;
+	visibility: hidden;
+}
+
+header {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.video_bg{
+    position: relative;
+    max-height:700px;
+}
+
+.video_bg h1 {
+	font-size: 3em;
+}
+
+.video_bg h2 {
+	font-size: 2em;
+}
+
+.video_bg h3 {
+	font-size: 1.5em;
+}
+
+.video_bg_mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.video_wrap{
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.video_wrap video{
+    min-height: 100vh;
+    min-width: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.video_bg .post_title {
+    display: block;
+    width: 80%;
+    height: auto;
+    background: transparent;
+    vertical-align: bottom;
+    margin: auto;
+    bottom: 0;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 10;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.video_bg .post_title .contact, .hidden1 .contact {
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 90px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.video_bg .post_title .contact:hover {
+  color: grey;
+  background-color: white;
+  opacity:0.5;
+  border: 2px solid grey;
+  text-decoration: none;
+}
+
+#glyphicon {
+	visibility: visible;
+	position: fixed;
+	top: 95%;
+	left: 49.5%;
+}
+
+.about_me {
+	background-color: hsla(0, 0%, 50%, 0.4);
+	padding: 20px 10px;
+	min-height: 100vh;
+	color: hsla(0,0%,0%, 0.7);
+	text-align: center;
+}
+
+.projects {
+	background-color: hsla(0, 0%, 50%, 0.9);
+	min-height: 100vh;
+	color: #2e0d0d;
+	text-align: center;
+}
+
+.about_me hr, .projects hr {
+	width: 20%;
+	height: 5px;
+	margin:0 auto; 
+}
+
+.about_me p, .projets p {
+	font-family: monospace;
+	font-size: 15px;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 2;
+}
+
+.about_me h3 {
+	font-size: 20px;
+	letter-spacing: 5px;
+	text-shadow: 2px 2px 10px #000;
+}
+.about_me .inner {
+	background-color: white;
+	width: 80%;
+	padding: 60px 20px;
+	margin: 20px auto;
+	box-shadow: 2px 2px 5px grey;
+	height: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.inner h1 {
+	text-transform: uppercase;
+}
+
+.logo img {
+	width: 50%;
+	border: 6px solid grey;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.projects .row {
+	margin: 5px auto;
+	width:100%
+}
+
+.projects .row img {
+	width: 100%;
+	height: 100%;
+}
+
+.projects i {
+	color: #2e0d0d;
+	font-size: 35px;
+}
+
+.projects i:hover {
+	color:#ab736f; 
+	font-size:30px;
+	cursor: pointer;
+}
+
+.rel {
+	height: 50vh;
+}
+
+.block {
+    height: 90%;
+    width: 100%;
+    margin: 0 auto;
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+	background-position: center center;
+}
+
+
+.block:hover {
+	border: 5px solid #665252;
+	box-shadow: 2px 2px 2px black;
+}
+
+.block p{
+	opacity: 0;
+	padding: 5%;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Segoe UI';
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    height: 100%;
+    overflow: hidden;
+}
+
+.block:hover p{
+	opacity: 1;
+	background: rgba(0,0,0,0.5);
+    transition: all 0.5s;
+}
+
+ /*FOOTER*/
+
+footer {
+	width: 100%;
+	background-color: hsla(0, 0%, 50%, 0.4);
+	color: #ab736f;
+	padding-top: 90px;
+	padding-bottom: 130px;
+}
+
+footer p {
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+p.name {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	line-height: normal;
+	font-family: 'Merriweather', serif;
+}
+
+p.social {
+	color: #2e0d0d;
+	font-weight: bold;
+}
+
+p.icons {
+	color: #2e0d0d;
+	font-size: 32px;
+}
+
+p.icons a {
+	color: #2e0d0d;
+	text-decoration: none;
+	margin-right: 30px;
+}
+
+p.icons a:last-child {
+	margin-right: 0px;
+}
+
+p.icons a:hover {
+	color: #ab736f;
+ 	opacity:0.5;
+    text-decoration: none;
+}
+
+.fb {
+	border: 2px solid white;
+	border-radius: 50px;
+	display: inline-block;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1.6px;
+	padding-top: 8px;
+	padding-left: 23px;
+	padding-bottom: 8px;
+	padding-right: 23px;
+	margin-bottom: 13px;
+	transition: 0.2s ease-out;
+}
+
+.fb:hover,.fb:visited {
+  color: #ab736f;
+  background-color: white;
+  border: 2px solid #ab736f;
+  text-decoration: none;
+}
+
+p.blog {
+	color: white;
+}
+/*max-width: 786px */
+@media (max-width: 1160px) {
+	.video_bg {
+		margin-bottom: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;
+	}
+
+    video_bg h1 {
+        font-size: 30px;
+    }
+
+	.video_bg h2 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .video_bg h3 {
+
+        font-size: 13px;
+		line-height: 1.5;
+    }
+
+    .video_bg .post_title {
+        top: 5%;
+
+    }
+
+    footer {
+		padding-top: 70px;
+		padding-bottom: 60px;
+		font-size: 12px;
+	}
+
+	p.icons {
+		font-size: 25px;
+	}
+
+	p.icons a {
+		margin-right: 20px;
+
+	}
+
+	p.icons a:last-child {
+		margin-right: 0px;
+	}
+
+    .block p {
+    	font-size: 15px;
+    }
+}
