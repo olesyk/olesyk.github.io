@@ -292,7 +292,7 @@ footer p {
 }
 
 p.name {
-	font-size: 28px;
+	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 10px;
 	line-height: normal;
@@ -361,7 +361,7 @@ p.blog {
 		text-align: center;
 	}
 
-    video_bg h1 {
+    .video_bg h1 {
         font-size: 30px;
     }
 
@@ -377,7 +377,7 @@ p.blog {
     }
 
     .video_bg .post_title {
-        top: 5%;
+        top: 15%;
 
     }
 
@@ -385,6 +385,14 @@ p.blog {
 		padding-top: 70px;
 		padding-bottom: 60px;
 		font-size: 12px;
+	}
+
+	footer .col-sm-4 {
+		margin: 0 10%;
+	}
+
+	footer .name {
+		font-size: 15px;
 	}
 
 	p.icons {
@@ -403,4 +411,10 @@ p.blog {
     .block p {
     	font-size: 15px;
     }
+}
+
+@media screen and (max-width: 768px) {
+	.block {
+		width: 80%;
+	}
 }
